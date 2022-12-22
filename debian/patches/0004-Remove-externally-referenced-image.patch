@@ -1,0 +1,31 @@
+Description: Remove externally referenced image
+ Fixes lintian privacy-breach-generic
+Author: Johan Van de Wauw <johan.vandewauw@gmail.com>
+Forwarded: not-needed
+
+--- a/README.rst
++++ b/README.rst
+@@ -2,23 +2,8 @@
+ Shapely
+ =======
+ 
+-|github-actions| |appveyor| |coveralls|
+-
+-.. |github-actions| image:: https://github.com/Toblerity/Shapely/workflows/Tests%20(Linux)/badge.svg
+-   :target: https://github.com/Toblerity/Shapely/actions
+-
+-.. |appveyor| image:: https://ci.appveyor.com/api/projects/status/github/Toblerity/Shapely?branch=master&svg=true
+-   :target: https://ci.appveyor.com/project/frsci/shapely?branch=master
+-
+-.. |coveralls| image:: https://coveralls.io/repos/github/Toblerity/Shapely/badge.svg?branch=master
+-   :target: https://coveralls.io/github/Toblerity/Shapely?branch=master
+-
+ Manipulation and analysis of geometric objects in the Cartesian plane.
+ 
+-.. image:: https://c2.staticflickr.com/6/5560/31301790086_b3472ea4e9_c.jpg
+-   :width: 800
+-   :height: 378
+-
+ Shapely is a BSD-licensed Python package for manipulation and analysis of
+ planar geometric objects. It is based on the widely deployed `GEOS
+ <https://trac.osgeo.org/geos/>`__ (the engine of `PostGIS

@@ -1,0 +1,41 @@
+Source: python-shapely
+Maintainer: Debian GIS Project <pkg-grass-devel@lists.alioth.debian.org>
+Uploaders: Pietro Battiston <me@pietrobattiston.it>,
+           Bas Couwenberg <sebastic@debian.org>
+Section: python
+Priority: optional
+Build-Depends: debhelper-compat (= 12),
+               dh-python,
+               libgeos-dev (>= 3.3.0),
+               python3-all,
+               python3-all-dev,
+               python3-descartes,
+               python3-matplotlib,
+               python3-numpy,
+               python3-pytest,
+               python3-setuptools,
+               cython3
+Standards-Version: 4.6.0
+Vcs-Browser: https://salsa.debian.org/debian-gis-team/python-shapely
+Vcs-Git: https://salsa.debian.org/debian-gis-team/python-shapely.git
+Homepage: https://github.com/Toblerity/Shapely
+
+Package: python3-shapely
+Architecture: any
+Depends: python3,
+         ${python3:Depends},
+         ${shlibs:Depends},
+         ${misc:Depends}
+Suggests: python3-numpy,
+          python3-matplotlib
+Enhances: python3-numpy
+Description: geometric objects, predicates, and operations (Python 3)
+ Shapely is a package for manipulation and analysis of 2D features.
+ Its capabilities include:
+  * calculating the point set unions, intersections, or differences of features
+  * predicate tests on features: intersects, touches, contains, and more.
+ .
+ Supported geometric types are points, line strings, linear rings, polygons, and
+ homogeneous or heterogeneous collections thereof.
+ .
+ This is the Python 3 version of the package.

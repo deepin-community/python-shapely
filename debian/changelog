@@ -1,0 +1,418 @@
+python-shapely (1.8.0-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Refresh patches.
+  * Move from experimental to unstable.
+
+ -- Bas Couwenberg <sebastic@debian.org>  Tue, 26 Oct 2021 05:47:44 +0200
+
+python-shapely (1.8~rc2-1~exp1) experimental; urgency=medium
+
+  * New upstream release candidate.
+  * Ignore test failures on mips*el.
+  * Drop load_dll.patch, applied upstream.
+
+ -- Bas Couwenberg <sebastic@debian.org>  Wed, 20 Oct 2021 06:18:46 +0200
+
+python-shapely (1.8~rc1-1~exp1) experimental; urgency=medium
+
+  * New upstream release candidate.
+    (closes: #996793)
+  * Update watch file for GitHub URL changes.
+  * Bump Standards-Version to 4.6.0, no changes.
+  * Bump debhelper compat to 12, no changes.
+  * Refresh patches.
+  * Add patch to fix loading geos_c library on Linux.
+
+ -- Bas Couwenberg <sebastic@debian.org>  Tue, 19 Oct 2021 05:47:42 +0200
+
+python-shapely (1.7.1-3) unstable; urgency=medium
+
+  * Update watch file for GitHub URL changes.
+  * Bump Standards-Version to 4.6.0, no changes.
+  * Bump debhelper compat to 12, no changes.
+  * Add upstream patch to fix test failure with GEOS 3.10.0.
+
+ -- Bas Couwenberg <sebastic@debian.org>  Thu, 21 Oct 2021 07:50:12 +0200
+
+python-shapely (1.7.1-2) unstable; urgency=medium
+
+  * Bump watch file version to 4.
+  * Update lintian overrides.
+  * Bump Standards-Version to 4.5.1, no changes.
+  * Add upstream patch to fix FTBFS with GEOS 3.9.0.
+    (closes: #978326)
+
+ -- Bas Couwenberg <sebastic@debian.org>  Sun, 27 Dec 2020 10:25:08 +0100
+
+python-shapely (1.7.1-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Bump debhelper compat to 10, changes:
+    - Drop --parallel option, enabled by default
+  * Refresh patches. Mark them as Forwarded: not-needed.
+
+ -- Bas Couwenberg <sebastic@debian.org>  Fri, 21 Aug 2020 07:41:28 +0200
+
+python-shapely (1.7.0-1) unstable; urgency=medium
+
+  * Ignore test failures on hppa.
+  * Move from experimental to unstable.
+
+ -- Bas Couwenberg <sebastic@debian.org>  Fri, 31 Jan 2020 06:49:47 +0100
+
+python-shapely (1.7.0-1~exp1) experimental; urgency=medium
+
+  * New upstream release.
+  * Drop Name field from upstream metadata.
+  * Bump Standards-Version to 4.5.0, no changes.
+  * Refresh patches.
+  * Drop test_operations.patch, fixed upstream.
+  * Drop license & copyright for ftools.py, removed upstream.
+
+ -- Bas Couwenberg <sebastic@debian.org>  Wed, 29 Jan 2020 08:16:52 +0100
+
+python-shapely (1.6.4-5) unstable; urgency=medium
+
+  * Ignore test failures on s390x & ppc64.
+
+ -- Bas Couwenberg <sebastic@debian.org>  Tue, 19 Nov 2019 21:31:06 +0100
+
+python-shapely (1.6.4-4) unstable; urgency=medium
+
+  * Update Homepage URL.
+  * Bump Standards-Version to 4.4.1, no changes.
+  * Add patch to fix FTBFS due to test_operations failure.
+
+ -- Bas Couwenberg <sebastic@debian.org>  Tue, 19 Nov 2019 17:12:04 +0100
+
+python-shapely (1.6.4-3) unstable; urgency=medium
+
+  * Bump Standards-Version to 4.4.0, no changes.
+  * Drop autopkgtests to test installability & module import.
+  * Add lintian override for testsuite-autopkgtest-missing.
+  * Update watch file to limit matches to archive path.
+  * Fix incomplete-creative-commons-license issue.
+  * Update gbp.conf to use --source-only-changes by default.
+  * Drop Python 2 support.
+  * Drop -doc package, FTBFS with Python 3.
+
+ -- Bas Couwenberg <sebastic@debian.org>  Sun, 21 Jul 2019 20:40:05 +0200
+
+python-shapely (1.6.4-2) unstable; urgency=medium
+
+  * Update Vcs-* URLs for Salsa.
+  * Add module import tests to autopkgtest configuration.
+  * Bump Standards-Version to 4.1.5, no changes.
+  * Drop ancient X-Python{,3}-Version fields.
+  * Strip trailing whitespace from changelog & rules files.
+
+ -- Bas Couwenberg <sebastic@debian.org>  Sat, 21 Jul 2018 12:24:17 +0200
+
+python-shapely (1.6.4-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Update copyright-format URL to use HTTPS.
+  * Bump Standards-Version to 4.1.3, no changes.
+
+ -- Bas Couwenberg <sebastic@debian.org>  Wed, 24 Jan 2018 17:33:30 +0100
+
+python-shapely (1.6.3-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Strip trailing whitespace from changelog.
+  * Bump Standards-Version to 4.1.2, no changes.
+
+ -- Bas Couwenberg <sebastic@debian.org>  Sun, 10 Dec 2017 11:36:14 +0100
+
+python-shapely (1.6.2-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Bump Standards-Version to 4.1.1, no changes.
+  * Update privacy breach patch.
+
+ -- Bas Couwenberg <sebastic@debian.org>  Thu, 26 Oct 2017 19:55:12 +0200
+
+python-shapely (1.6.1-1) unstable; urgency=medium
+
+  * New upstream release.
+
+ -- Bas Couwenberg <sebastic@debian.org>  Sat, 02 Sep 2017 11:50:55 +0200
+
+python-shapely (1.6.0-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Move from experimental to unstable.
+
+ -- Bas Couwenberg <sebastic@debian.org>  Wed, 23 Aug 2017 16:10:43 +0200
+
+python-shapely (1.6~b5-1~exp1) experimental; urgency=medium
+
+  * New upstream pre-release.
+
+ -- Bas Couwenberg <sebastic@debian.org>  Sat, 19 Aug 2017 10:08:59 +0200
+
+python-shapely (1.6~b4-1~exp3) experimental; urgency=medium
+
+  * Fix SOURCE_DATE_EPOCH use.
+
+ -- Bas Couwenberg <sebastic@debian.org>  Mon, 26 Jun 2017 21:27:33 +0200
+
+python-shapely (1.6~b4-1~exp2) experimental; urgency=medium
+
+  * Bump Standards-Version to 4.0.0, no changes.
+  * Add autopkgtest to test installability.
+  * Enable PIE hardening buildflags.
+  * Use pkg-info.mk variables instead of dpkg-parsechangelog output.
+
+ -- Bas Couwenberg <sebastic@debian.org>  Mon, 26 Jun 2017 07:56:14 +0200
+
+python-shapely (1.6~b4-1~exp1) experimental; urgency=medium
+
+  * New upstream pre-release.
+  * Refresh patches.
+  * Update path for packaging in copyright file.
+
+ -- Bas Couwenberg <sebastic@debian.org>  Wed, 15 Feb 2017 18:46:48 +0100
+
+python-shapely (1.6~b3-1~exp1) experimental; urgency=medium
+
+  * New upstream pre-release.
+  * Refresh patches.
+
+ -- Bas Couwenberg <sebastic@debian.org>  Sat, 31 Dec 2016 11:55:04 +0100
+
+python-shapely (1.6~b2-1~exp1) experimental; urgency=medium
+
+  * New upstream pre-release.
+  * Refresh patches.
+
+ -- Bas Couwenberg <sebastic@debian.org>  Mon, 12 Dec 2016 18:37:22 +0100
+
+python-shapely (1.6~a2-1~exp1) experimental; urgency=medium
+
+  * New upstream pre-release.
+
+ -- Bas Couwenberg <sebastic@debian.org>  Wed, 09 Nov 2016 19:03:14 +0100
+
+python-shapely (1.6~a1-1~exp1) experimental; urgency=medium
+
+  * New upstream pre-release.
+  * Update watchfile to handle 'a' pre-releases.
+  * Add citation reference to upstream metadata.
+  * Update copyright file, changes:
+    - Add license & copyright for packaging/*
+  * Refresh patches.
+
+ -- Bas Couwenberg <sebastic@debian.org>  Wed, 14 Sep 2016 19:12:51 +0200
+
+python-shapely (1.5.17-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Add upstream metadata.
+
+ -- Bas Couwenberg <sebastic@debian.org>  Wed, 31 Aug 2016 12:36:29 +0200
+
+python-shapely (1.5.16-1) unstable; urgency=medium
+
+  * New upstream release.
+
+ -- Bas Couwenberg <sebastic@debian.org>  Fri, 27 May 2016 11:20:55 +0200
+
+python-shapely (1.5.15-2) unstable; urgency=medium
+
+  * Bump Standards-Version to 3.9.8, no changes.
+  * Set today & html_last_updated_fmt in SPHINXOPTS for reproducible builds.
+
+ -- Bas Couwenberg <sebastic@debian.org>  Sun, 15 May 2016 21:05:00 +0200
+
+python-shapely (1.5.15-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Update dh_python & dh_numpy calls to act on specific package.
+
+ -- Bas Couwenberg <sebastic@debian.org>  Wed, 30 Mar 2016 20:08:32 +0200
+
+python-shapely (1.5.14-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Update Vcs-Git URL to use HTTPS.
+  * Bump Standards-Version to 3.9.7, no changes.
+  * Enable parallel builds.
+  * Drop unneeded dh_auto_test override.
+  * Add build dependency on pytest.
+  * Enable all hardening buildflags, except PIE (causes build failure).
+  * Add descartes to build dependencies for documentation.
+  * Override dh_python{2,3} to call dh_numpy{,3} too.
+
+ -- Bas Couwenberg <sebastic@debian.org>  Mon, 28 Mar 2016 12:28:53 +0200
+
+python-shapely (1.5.13-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Add myself to Uploaders.
+
+ -- Bas Couwenberg <sebastic@debian.org>  Sun, 11 Oct 2015 11:35:29 +0200
+
+python-shapely (1.5.12-1) unstable; urgency=medium
+
+  * Team upload.
+  * New upstream release.
+  * Move package from collab-maint to pkg-grass.
+  * Update copyright file, changes:
+    - Update Source URL for GitHub releases
+    - Change CC-BY shortname to CC-BY-3.0
+    - Add license & copyright for ftools.py
+  * Use dh_clean for additional file removals.
+  * Refresh patches.
+  * Bump minimum required libgeos-dev to 3.3.0.
+  * Add doc-base registration for Shapely documentation.
+  * Use dh_clean for additional file removals.
+
+ -- Bas Couwenberg <sebastic@debian.org>  Fri, 28 Aug 2015 15:19:03 +0200
+
+python-shapely (1.5.9-1) unstable; urgency=medium
+
+  * Team upload.
+
+  [ Pietro Battiston ]
+  * Suggests: python-shapely-doc (Closes: #765417, #765418)
+  * Build-depend on python3-all-dev and not on python{,3}-dev (Closes: #793583)
+  * Delete cythonized files so that they are recreated
+  * Build-depend on python{,3}-numpy for cythoning "vectorize.pyx"
+
+  [ Johan Van de Wauw ]
+  * Mangle version in watch file
+  * Add gbp.conf
+  * Imported Upstream version 1.5.9
+  * Remove cythonize patch
+
+  [ Bas Couwenberg ]
+  * Update watchfile with sepwatch changes.
+  * Drop dependencies on libgeos-c1. (Closes: #795259, #795883)
+  * Bump debhelper compatibility to 9.
+  * Add dependency on ${sphinxdoc:Depends} to python-shapely-doc.
+
+ -- Bas Couwenberg <sebastic@debian.org>  Mon, 17 Aug 2015 21:03:03 +0200
+
+python-shapely (1.4.3-1) unstable; urgency=low
+
+  * Imported Upstream version 1.4.3
+    - Build documentation which now uses sphinx.
+    - Install documentation in new package python-shapely-doc.
+    - Strip non-needed file _geos.pxi.
+    - python{,3}-dev now needed as Build-Depends.
+  * Clarified BSD version in debian/copyright.
+  * Updated policy version.
+
+ -- Pietro Battiston <me@pietrobattiston.it>  Fri, 26 Sep 2014 15:59:20 +0200
+
+python-shapely (1.3.0-1) unstable; urgency=low
+
+  * Imported Upstream version 1.3.0 (Closes: #731566)
+    - Works with libgeos >= 3.4.2 (Closes: #733667, #735808)
+    - Removed non-deterministic test "cascaded_union.txt" (Closes: #666655)
+  * Deleted obsolete patches.
+  * Require python >= 2.6.
+  * Switched to pbuild, added support for python 3.
+  * Updated watch file: look for releases on github (they contain .pyx files).
+  * Updated Homepage field.
+  * Updated policy version.
+
+ -- Pietro Battiston <me@pietrobattiston.it>  Mon, 20 Jan 2014 11:04:52 +0100
+
+python-shapely (1.2.14-1) unstable; urgency=low
+
+  * New upstream release.
+  * Removed now obsolete python 2.7 support patch; updated other patches.
+  * Cython autogenerated .c file is now deleted via override.
+  * Introduced upstream patch which fixes broken test (Closes: #663210).
+  * Added "set -e" before loop in debian/rules.
+  * Updated policy version.
+
+ -- Pietro Battiston <me@pietrobattiston.it>  Sat, 10 Mar 2012 17:54:53 +0100
+
+python-shapely (1.2.13-1) unstable; urgency=low
+
+  * New upstream release.
+  * Now using gbp-pq to manage patches.
+  * Fixed test for Python 2.7 with upstream patch (Closes: #652183).
+  * Tests are now ran with all supported Python versions.
+  * Updated debian/copyright format.
+
+ -- Pietro Battiston <me@pietrobattiston.it>  Wed, 21 Dec 2011 16:17:20 +0100
+
+python-shapely (1.2.10-1) unstable; urgency=low
+
+  * New upstream release.
+    - Introduces Cython speedups: updated dependencies accordingly.
+    - Patched setup.py to recreate .c file from .pyx file.
+
+ -- Pietro Battiston <me@pietrobattiston.it>  Thu, 30 Jun 2011 08:57:03 +0200
+
+python-shapely (1.2.8-1) unstable; urgency=low
+
+  * New upstream release.
+  * Use dh_python2.
+  * Remove obsolete patch "typo-in-dll-test".
+  * Added python-matplotlib (used by eline.lengthxample scripts) in Suggests.
+
+ -- Pietro Battiston <me@pietrobattiston.it>  Fri, 11 Feb 2011 12:03:40 +0200
+
+python-shapely (1.2.4-1) experimental; urgency=low
+
+  * New upstream release (Closes: #590475)
+
+ -- Pietro Battiston <toobaz@email.it>  Sun, 19 Sep 2010 10:11:40 +0200
+
+python-shapely (1.2.1-2) unstable; urgency=low
+
+  * Fixes to manual from upstream version 1.2.3
+  * Run tests, except wkt_locale which is broken.
+  * Require newer version of debhelper to support override_dh_auto_test.
+  * Updated standards version.
+
+ -- Pietro Battiston <toobaz@email.it>  Tue, 14 Sep 2010 18:30:47 +0200
+
+python-shapely (1.2.1-1) unstable; urgency=low
+
+  * New upstream release
+  * Matched package description to upstream readme
+  * Indicate new upstream manual
+  * Mark depedence on Python >= 2.5 and GEOS >= 3.1
+
+ -- Pietro Battiston <toobaz@email.it>  Fri, 24 Jun 2010 15:11:27 +0200
+
+python-shapely (1.0.15-1) unstable; urgency=low
+
+  * New upstream release (Closes: #577213)
+  * Switched to machine-readable debian/copyright
+  * Updated debian/control with standards version and VCS information
+
+ -- Pietro Battiston <toobaz@email.it>  Fri, 30 Apr 2010 12:24:27 +0200
+
+python-shapely (1.0.14-1) unstable; urgency=low
+
+  * New upstream release
+
+ -- Pietro Battiston <toobaz@email.it>  Fri, 06 Nov 2009 11:54:00 +0100
+
+python-shapely (1.0.12-1) unstable; urgency=low
+
+  * New upstream release (Closes: #530775)
+  * Migration from python-central to python-support
+
+ -- Pietro Battiston <toobaz@email.it>  Fri, 29 May 2009 09:56:00 +0200
+
+python-shapely (1.0.11-2) unstable; urgency=low
+
+  * Added information about packaging license (Closes: #511984)
+  * debian/rules: improve clean rule by removing generated files
+
+ -- Pietro Battiston <toobaz@email.it>  Fri, 16 Jan 2009 12:24:42 +0100
+
+python-shapely (1.0.11-1) unstable; urgency=low
+
+  * Initial release (Closes: #509253)
+
+ -- Pietro Battiston <toobaz@email.it>  Tue, 16 Dec 2008 22:35:31 +0100
