@@ -8,30 +8,22 @@
 export DEB_BUILD_MAINT_OPTIONS=hardening=+all
 
 export PYBUILD_NAME=shapely
+ifeq ($(PYBUILD_AUTOPKGTEST),1)
+export PYBUILD_TEST_ARGS=-vv --pyargs ${PYBUILD_NAME}
+endif
+
 export LC_ALL=C.UTF-8
 
 include /usr/share/dpkg/architecture.mk
-include /usr/share/dpkg/pkg-info.mk
 
 %:
-	dh $@ --with python3 --buildsystem=pybuild
-
-override_dh_clean:
-	dh_clean VERSION.txt \
-	         shapely/speedups/_speedups.c \
-	         shapely/speedups/_speedups.so \
-	         shapely/vectorized/_vectorized.c \
-	         Shapely.egg-info/*
+	dh $@ --buildsystem=pybuild
 
 override_dh_auto_test:
 ifeq (,$(filter nocheck,$(DEB_BUILD_OPTIONS)))
-ifneq (,$(filter $(DEB_BUILD_ARCH),mips64el mipsel s390x hppa ppc64))
+ifneq (,$(filter $(DEB_BUILD_ARCH),mips64el mipsel))
 	dh_auto_test || echo "Ignoring test failures"
 else
 	dh_auto_test
 endif
 endif
-
-override_dh_python3:
-	dh_python3 -ppython3-shapely
-	dh_numpy3 -ppython3-shapely

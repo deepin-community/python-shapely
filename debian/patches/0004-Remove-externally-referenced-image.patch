@@ -5,20 +5,50 @@ Forwarded: not-needed
 
 --- a/README.rst
 +++ b/README.rst
-@@ -2,23 +2,8 @@
+@@ -2,53 +2,8 @@
  Shapely
  =======
  
--|github-actions| |appveyor| |coveralls|
+-.. Documentation at RTD — https://readthedocs.org
 -
--.. |github-actions| image:: https://github.com/Toblerity/Shapely/workflows/Tests%20(Linux)/badge.svg
--   :target: https://github.com/Toblerity/Shapely/actions
+-.. image:: https://readthedocs.org/projects/shapely/badge/?version=stable
+-   :alt: Documentation Status
+-   :target: https://shapely.readthedocs.io/en/stable/
 -
--.. |appveyor| image:: https://ci.appveyor.com/api/projects/status/github/Toblerity/Shapely?branch=master&svg=true
--   :target: https://ci.appveyor.com/project/frsci/shapely?branch=master
+-.. Github Actions status — https://github.com/shapely/shapely/actions
 -
--.. |coveralls| image:: https://coveralls.io/repos/github/Toblerity/Shapely/badge.svg?branch=master
--   :target: https://coveralls.io/github/Toblerity/Shapely?branch=master
+-.. |github-actions| image:: https://github.com/shapely/shapely/workflows/Tests/badge.svg?branch=main
+-   :alt: Github Actions status
+-   :target: https://github.com/shapely/shapely/actions?query=branch%3Amain
+-
+-.. Travis CI status -- https://travis-ci.com
+-
+-.. image:: https://travis-ci.com/shapely/shapely.svg?branch=main
+-   :alt: Travis CI status
+-   :target: https://travis-ci.com/github/shapely/shapely
+-
+-.. PyPI
+-
+-.. image:: https://img.shields.io/pypi/v/shapely.svg
+-   :alt: PyPI
+-   :target: https://pypi.org/project/shapely/
+-
+-.. Anaconda
+-
+-.. image:: https://img.shields.io/conda/vn/conda-forge/shapely
+-   :alt: Anaconda
+-   :target: https://anaconda.org/conda-forge/shapely
+-
+-.. Coverage
+-
+-.. |coveralls| image:: https://coveralls.io/repos/github/shapely/shapely/badge.svg?branch=main
+-   :target: https://coveralls.io/github/shapely/shapely?branch=main
+-
+-.. Zenodo
+-
+-.. .. image:: https://zenodo.org/badge/191151963.svg
+-..   :alt: Zenodo
+-..   :target: https://zenodo.org/badge/latestdoi/191151963
 -
  Manipulation and analysis of geometric objects in the Cartesian plane.
  
@@ -27,5 +57,5 @@ Forwarded: not-needed
 -   :height: 378
 -
  Shapely is a BSD-licensed Python package for manipulation and analysis of
- planar geometric objects. It is based on the widely deployed `GEOS
- <https://trac.osgeo.org/geos/>`__ (the engine of `PostGIS
+ planar geometric objects. It is using the widely deployed open-source
+ geometry library `GEOS <https://libgeos.org/>`__ (the engine of `PostGIS
