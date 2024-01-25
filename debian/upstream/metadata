@@ -1,11 +1,5 @@
 ---
-Bug-Database: https://github.com/Toblerity/Shapely/issues
-Bug-Submit: https://github.com/Toblerity/Shapely/issues/new
-Reference:
-  Author: Sean Gillies and others
-  Organization: toblerity.org
-  Title: "Shapely: manipulation and analysis of geometric objects"
-  Year: 2007
-  URL: https://github.com/Toblerity/Shapely
-Repository: https://github.com/Toblerity/Shapely.git
-Repository-Browse: https://github.com/Toblerity/Shapely
+Bug-Database: https://github.com/shapely/shapely/issues
+Bug-Submit: https://github.com/shapely/shapely/issues/new
+Repository: https://github.com/shapely/shapely.git
+Repository-Browse: https://github.com/shapely/shapely
