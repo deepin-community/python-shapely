@@ -4,7 +4,7 @@ Upstream-Contact: Gis Python community list <community@lists.gispython.org>
 Source: https://github.com/shapely/shapely
 
 Files: *
-Copyright: 2007-2023, Shapely Contributors
+Copyright: 2007-2024, Shapely Contributors
                 2019, Casper van der Wel
                 2007, Sean Gillies <sgillies@frii.com>
 License: BSD-3-clause

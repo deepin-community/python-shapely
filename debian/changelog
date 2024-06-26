@@ -1,3 +1,16 @@
+python-shapely (2.0.4-1) unstable; urgency=medium
+
+  * New upstream release.
+
+ -- Bas Couwenberg <sebastic@debian.org>  Wed, 17 Apr 2024 05:16:00 +0200
+
+python-shapely (2.0.3-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Update copyright file.
+
+ -- Bas Couwenberg <sebastic@debian.org>  Fri, 16 Feb 2024 20:16:09 +0100
+
 python-shapely (2.0.2-2) unstable; urgency=medium
 
   * Fix autopkgtest failure.
