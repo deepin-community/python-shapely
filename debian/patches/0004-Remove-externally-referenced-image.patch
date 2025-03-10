@@ -5,7 +5,7 @@ Forwarded: not-needed
 
 --- a/README.rst
 +++ b/README.rst
-@@ -2,53 +2,8 @@
+@@ -2,47 +2,8 @@
  Shapely
  =======
  
@@ -20,12 +20,6 @@ Forwarded: not-needed
 -.. |github-actions| image:: https://github.com/shapely/shapely/workflows/Tests/badge.svg?branch=main
 -   :alt: Github Actions status
 -   :target: https://github.com/shapely/shapely/actions?query=branch%3Amain
--
--.. Travis CI status -- https://travis-ci.com
--
--.. image:: https://travis-ci.com/shapely/shapely.svg?branch=main
--   :alt: Travis CI status
--   :target: https://travis-ci.com/github/shapely/shapely
 -
 -.. PyPI
 -
