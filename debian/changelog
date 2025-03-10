@@ -1,3 +1,51 @@
+python-shapely (2.0.7-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Ignore test failures on hppa.
+    (closes: #1092264)
+  * Update copyright file.
+  * Drop geos-3.13.0.patch, fixed upstream. Refresh remaining patches.
+
+ -- Bas Couwenberg <sebastic@debian.org>  Fri, 31 Jan 2025 06:31:39 +0100
+
+python-shapely (2.0.6-4) unstable; urgency=medium
+
+  * Update GEOS 3.13.0 patch to fix another test.
+
+ -- Bas Couwenberg <sebastic@debian.org>  Sun, 08 Sep 2024 16:03:45 +0200
+
+python-shapely (2.0.6-3) unstable; urgency=medium
+
+  * Add patch to fix test failures with GEOS 3.13.0.
+
+ -- Bas Couwenberg <sebastic@debian.org>  Sun, 08 Sep 2024 06:42:35 +0200
+
+python-shapely (2.0.6-2) unstable; urgency=medium
+
+  * No-change rebuild with GEOS 3.13.0.
+
+ -- Bas Couwenberg <sebastic@debian.org>  Sat, 07 Sep 2024 16:42:18 +0200
+
+python-shapely (2.0.6-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Bump Standards-Version to 4.7.0, no changes.
+
+ -- Bas Couwenberg <sebastic@debian.org>  Fri, 23 Aug 2024 08:21:10 +0200
+
+python-shapely (2.0.5-2) unstable; urgency=medium
+
+  * Use -Wno-error=incompatible-pointer-types to fix FTBFS with GCC 14.
+    (closes: #1075423)
+
+ -- Bas Couwenberg <sebastic@debian.org>  Wed, 24 Jul 2024 19:56:01 +0200
+
+python-shapely (2.0.5-1) unstable; urgency=medium
+
+  * New upstream release.
+
+ -- Bas Couwenberg <sebastic@debian.org>  Sun, 14 Jul 2024 07:22:43 +0200
+
 python-shapely (2.0.4-1) unstable; urgency=medium
 
   * New upstream release.

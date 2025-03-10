@@ -12,7 +12,7 @@ os.environ["SPHINX_DOC_BUILD"] = "1"
 # -- Project information -----------------------------------------------------
 
 project = 'Shapely'
-copyright = '2011-2024, Sean Gillies and Shapely contributors'
+copyright = '2011-2025, Sean Gillies and Shapely contributors'
 
 # The full version, including alpha/beta/rc tags.
 import shapely
@@ -112,7 +112,7 @@ html_context = {
 
 
 # write dummy _reference.rst with all functions listed to ensure the reference/
-# stub pages are crated (the autogeneration of those stub pages by autosummary 
+# stub pages are created (the autogeneration of those stub pages by autosummary 
 # happens before the jinja rendering is done, and thus at that point the
 # autosummary directives do not yet contain the final content
 

@@ -7,6 +7,8 @@
 # Enable hardening build flags
 export DEB_BUILD_MAINT_OPTIONS=hardening=+all
 
+export DEB_CFLAGS_MAINT_APPEND=-Wno-error=incompatible-pointer-types
+
 export PYBUILD_NAME=shapely
 ifeq ($(PYBUILD_AUTOPKGTEST),1)
 export PYBUILD_TEST_ARGS=-vv --pyargs ${PYBUILD_NAME}
@@ -21,7 +23,7 @@ include /usr/share/dpkg/architecture.mk
 
 override_dh_auto_test:
 ifeq (,$(filter nocheck,$(DEB_BUILD_OPTIONS)))
-ifneq (,$(filter $(DEB_BUILD_ARCH),mips64el mipsel))
+ifneq (,$(filter $(DEB_BUILD_ARCH),mips64el hppa))
 	dh_auto_test || echo "Ignoring test failures"
 else
 	dh_auto_test
